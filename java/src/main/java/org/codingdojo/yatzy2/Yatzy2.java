@@ -12,12 +12,6 @@ import java.util.stream.Collectors;
 public class Yatzy2 implements YatzyCalculator {
     static final List<Integer> DICE_VALUES = Arrays.asList(6, 5, 4, 3, 2, 1);
 
-
-    @Override
-    public List<YatzyCategory> validCategories() {
-        return Arrays.stream(YatzyCategory.values()).collect(Collectors.toList());
-    }
-
     @Override
     public int score(List<Integer> dice, YatzyCategory category) {
         int result;
