@@ -14,13 +14,12 @@ public class Yatzy2 implements YatzyCalculator {
 
 
     @Override
-    public List<String> validCategories() {
-        return Arrays.stream(YatzyCategory.values()).map(Enum::toString).collect(Collectors.toList());
+    public List<YatzyCategory> validCategories() {
+        return Arrays.stream(YatzyCategory.values()).collect(Collectors.toList());
     }
 
     @Override
-    public int score(List<Integer> dice, String categoryName) {
-        YatzyCategory category = YatzyCategory.valueOf(categoryName);
+    public int score(List<Integer> dice, YatzyCategory category) {
         int result;
         switch (category) {
             case CHANCE:

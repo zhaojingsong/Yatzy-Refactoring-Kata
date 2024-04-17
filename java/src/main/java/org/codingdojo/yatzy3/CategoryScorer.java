@@ -8,8 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public abstract class CategoryScorer {
-    public static CategoryScorer createInstance(String categoryName) {
-        YatzyCategory category = YatzyCategory.valueOf(categoryName);
+    public static CategoryScorer createInstance(YatzyCategory category) {
         return switch (category) {
             case CHANCE -> new ChanceScorer();
             case YATZY -> new YatzyPointsScorer();

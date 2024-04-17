@@ -9,12 +9,12 @@ import java.util.stream.Collectors;
 
 public class Yatzy3 implements YatzyCalculator {
     @Override
-    public List<String> validCategories() {
-        return Arrays.stream(YatzyCategory.values()).map(Enum::toString).collect(Collectors.toList());
+    public List<YatzyCategory> validCategories() {
+        return Arrays.stream(YatzyCategory.values()).collect(Collectors.toList());
     }
 
     @Override
-    public int score(List<Integer> dice, String category) {
+    public int score(List<Integer> dice, YatzyCategory category) {
         return CategoryScorer.createInstance(category).calculateScore(dice);
     }
 }
