@@ -11,6 +11,6 @@ public class Yatzy3 implements YatzyCalculator {
 
     @Override
     public int score(List<Integer> dice, YatzyCategory category) {
-        return CategoryScorer.createInstance(category).calculateScore(dice);
+        return CategoryScorerFactory.createInstance(category).calculateScore(dice);
     }
 }
