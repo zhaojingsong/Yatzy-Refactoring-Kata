@@ -1,6 +1,5 @@
 package org.codingdojo.yatzy1;
 
-import org.codingdojo.yatzy1.Yatzy1;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

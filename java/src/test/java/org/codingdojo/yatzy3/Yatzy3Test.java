@@ -1,7 +1,7 @@
 package org.codingdojo.yatzy3;
 
-import org.codingdojo.abs.AbstractYatzyCalculatorTest;
 import org.codingdojo.YatzyCalculator;
+import org.codingdojo.abs.AbstractYatzyCalculatorTest;
 
 public class Yatzy3Test extends AbstractYatzyCalculatorTest {
     @Override

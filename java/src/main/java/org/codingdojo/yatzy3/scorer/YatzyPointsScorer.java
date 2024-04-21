@@ -1,8 +1,8 @@
-package org.codingdojo.yatzy3;
+package org.codingdojo.yatzy3.scorer;
 
 import java.util.List;
 
-public class YatzyPointsScorer extends CategoryScorer  {
+public class YatzyPointsScorer extends AbstractCategoryScorer {
     @Override
     public int calculateScore(List<Integer> dice) {
         if (frequencies(dice).containsValue(5)) {

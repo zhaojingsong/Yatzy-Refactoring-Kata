@@ -1,9 +1,10 @@
-package org.codingdojo.yatzy3;
+package org.codingdojo.yatzy3.factory;
 
 import org.codingdojo.YatzyCategory;
+import org.codingdojo.yatzy3.scorer.*;
 
 public class CategoryScorerFactory {
-    public static CategoryScorer createInstance(YatzyCategory category) {
+    public static AbstractCategoryScorer createInstance(YatzyCategory category) {
         return switch (category) {
             case CHANCE -> new ChanceScorer();
             case YATZY -> new YatzyPointsScorer();

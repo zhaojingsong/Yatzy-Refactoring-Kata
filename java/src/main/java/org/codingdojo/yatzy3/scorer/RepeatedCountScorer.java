@@ -1,10 +1,10 @@
-package org.codingdojo.yatzy3;
+package org.codingdojo.yatzy3.scorer;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-public class RepeatedCountScorer extends CategoryScorer  {
+public class RepeatedCountScorer extends AbstractCategoryScorer {
     private final int count;
 
     public RepeatedCountScorer(int count) {

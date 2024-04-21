@@ -1,9 +1,9 @@
-package org.codingdojo.yatzy3;
+package org.codingdojo.yatzy3.scorer;
 
 import java.util.List;
 import java.util.Map;
 
-public class FullHouseScorer extends CategoryScorer {
+public class FullHouseScorer extends AbstractCategoryScorer {
     @Override
     public int calculateScore(List<Integer> dice) {
         Map<Integer, Integer> frequencies = frequencies(dice);

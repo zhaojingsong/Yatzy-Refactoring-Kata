@@ -1,8 +1,8 @@
-package org.codingdojo.yatzy3;
+package org.codingdojo.yatzy3.scorer;
 
 import java.util.List;
 
-public class NumberScorer extends CategoryScorer  {
+public class NumberScorer extends AbstractCategoryScorer {
     private final int number;
 
     public NumberScorer(int number) {

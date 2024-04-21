@@ -2,17 +2,11 @@ package org.codingdojo.abs;
 
 import org.codingdojo.YatzyCalculator;
 import org.codingdojo.YatzyCategory;
-import org.codingdojo.yatzy2.Yatzy2;
-import org.codingdojo.yatzy3.Yatzy3;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
-import java.util.stream.Stream;
 
 import static org.codingdojo.YatzyCategory.*;
-import static org.codingdojo.YatzyCategory.FULL_HOUSE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public abstract class AbstractYatzyCalculatorTest {
@@ -45,7 +39,6 @@ public abstract class AbstractYatzyCalculatorTest {
 
 
     @Test
-
     public void twos() {
         YatzyCalculator calculator = getYatzyCalculator();
         assertEquals(4, calculator.score(List.of(1, 2, 3, 2, 6), YatzyCategory.TWOS));
@@ -54,7 +47,6 @@ public abstract class AbstractYatzyCalculatorTest {
 
 
     @Test
-
     public void threes() {
         YatzyCalculator calculator = getYatzyCalculator();
         assertEquals(6, calculator.score(List.of(1, 2, 3, 2, 3), THREES));
@@ -63,7 +55,6 @@ public abstract class AbstractYatzyCalculatorTest {
 
 
     @Test
-
     public void fours() {
         YatzyCalculator calculator = getYatzyCalculator();
         assertEquals(12, calculator.score(List.of(4, 4, 4, 5, 5), FOURS));

@@ -1,10 +1,10 @@
-package org.codingdojo.yatzy3;
+package org.codingdojo.yatzy3.scorer;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-public class TwoPairsScorer extends CategoryScorer {
+public class TwoPairsScorer extends AbstractCategoryScorer {
     @Override
     public int calculateScore(List<Integer> dice) {
         Map<Integer, Integer> frequencies = frequencies(dice);

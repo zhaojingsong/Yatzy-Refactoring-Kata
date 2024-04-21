@@ -2,10 +2,9 @@ package org.codingdojo.yatzy3;
 
 import org.codingdojo.YatzyCalculator;
 import org.codingdojo.YatzyCategory;
+import org.codingdojo.yatzy3.factory.CategoryScorerFactory;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Yatzy3 implements YatzyCalculator {
 

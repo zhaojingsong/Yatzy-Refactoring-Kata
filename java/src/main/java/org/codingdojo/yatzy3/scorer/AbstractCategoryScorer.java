@@ -1,13 +1,11 @@
-package org.codingdojo.yatzy3;
-
-import org.codingdojo.YatzyCategory;
+package org.codingdojo.yatzy3.scorer;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public abstract class CategoryScorer {
+public abstract class AbstractCategoryScorer {
 
     public abstract int calculateScore(List<Integer> dice);
 
